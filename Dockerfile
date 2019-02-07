@@ -13,6 +13,6 @@ RUN deps='\
      && sudo apt install -y -qq $deps --no-install-recommends \
      && sudo gem install bundler --no-document \
      && sudo rm -rf /var/lib/apt/lists/* \
-     && sudo docker-php-ext-install gd \
+     && sudo docker-php-ext-install gd sockets \
      && composer global require hirak/prestissimo
 
