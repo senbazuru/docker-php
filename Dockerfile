@@ -1,4 +1,4 @@
-FROM circleci/php:7.1-cli-browsers
+FROM circleci/php:7.3-cli-stretch
 MAINTAINER senbazuru
 
 RUN curl -sL bootstrap.pypa.io/get-pip.py | sudo python \
